@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E55601C-1F0C-4277-9897-BF01DC407B59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2014150654_ENT</RootNamespace>
+    <AssemblyName>2014150654-ENT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="EntitiesDTO\ATMDTO.cs" />
+    <Compile Include="EntitiesDTO\BasedeDatosDTO.cs" />
+    <Compile Include="EntitiesDTO\CuentaDTO.cs" />
+    <Compile Include="EntitiesDTO\DispensadorEfectivoDTO.cs" />
+    <Compile Include="EntitiesDTO\PantallaDTO.cs" />
+    <Compile Include="EntitiesDTO\RanuraDepositoDTO.cs" />
+    <Compile Include="EntitiesDTO\RetiroDTO.cs" />
+    <Compile Include="EntitiesDTO\TecladoDTO.cs" />
+    <Compile Include="Entities\ATM.cs" />
+    <Compile Include="Entities\BasedeDatos.cs" />
+    <Compile Include="Entities\Cuenta.cs" />
+    <Compile Include="Entities\DispensadorEfectivo.cs" />
+    <Compile Include="Entities\Pantalla.cs" />
+    <Compile Include="Entities\RanuraDeposito.cs" />
+    <Compile Include="Entities\Retiro.cs" />
+    <Compile Include="Entities\Teclado.cs" />
+    <Compile Include="IRepository\IATMRepository.cs" />
+    <Compile Include="IRepository\IBasedeDatosRepository.cs" />
+    <Compile Include="IRepository\ICuentaRepository.cs" />
+    <Compile Include="IRepository\IDispensadorEfectivoRepository.cs" />
+    <Compile Include="IRepository\IPantallaRepository.cs" />
+    <Compile Include="IRepository\IRanuraDepositoRepository.cs" />
+    <Compile Include="IRepository\IRepository.cs" />
+    <Compile Include="IRepository\IRetiroRepository.cs" />
+    <Compile Include="IRepository\ITecladoRepository.cs" />
+    <Compile Include="IRepository\IUnityOfWork.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
